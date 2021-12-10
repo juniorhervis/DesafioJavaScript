@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/cep.css"/>
+    <title>Buscador de CEP</title>
+  </head>
+  <body>
+      <header class=" flex align-itens-center ">
+        <h1>ME ACHA!</h1>
+        <h2>ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h2>
+        <div>
+            <span class="material-icons icons-list icon-search flex align-itens-center">travel_explore</span>
+          </span>
+        </div>
+        </header>
+    <section id="search-area" class="flex align-itens-center">
+      <form method="post" name="busca">
+        <fieldset id="campos">
+          <label for="cep">Cep</label>
+          <input
+            type="number"
+            required
+            class="txt"
+            id="cep"
+            name="cep"
+            value="" required
+          />
+          <label for="logradouro">Rua</label>
+          <input
+            type="text"
+            class="txt"
+            id="logradouro"
+            name="logradouro"
+            value="" disabled
+          />
+          <label for="bairro">Bairro</label>
+          <input
+            type="text"
+            class="txt"
+            id="bairro"
+            name="bairro"
+            value="" disabled
+          />
+          <label for="localidade">Cidade</label>
+          <input
+            type="text"
+            class="txt"
+            id="localidade"
+            name="localidade"
+            value="" disabled
+          />
+          <label for="uf">Estado</label>
+          <input
+            type="text"
+            class="txt"
+            id="uf"
+            name="uf"
+            value="" disabled
+          />
+        </fieldset>
+        <fieldset id="button" class="align-itens-center flex">
+          <input type="button" class="btn" id="buscarDados" name="buscarDados" value="Buscar" />
+        </fieldset>
+      </form>
+    </section>
+  </body>
+  <script src="script/cep.js"></script>
+</html>
