@@ -81,16 +81,4 @@ window.onload = function () {
       return item.descricao === descricao;
     });
   }
-
-  // function removerCompra(elemento) {
-  //   const lista = document.querySelectorAll(`#${elemento} > li`);
-
-  //   for (let produtosSelecionados of lista) {
-  //     produtosSelecionados.addEventListener("click", () => {
-  //       produtosSelecionados.remove();
-  //       verificaItem();
-  //       totalFinal();
-  //     });
-  //   }
-  // }
 };
