@@ -33,6 +33,8 @@ window.onload = () => {
   }
 };
 
+
+
 //implementação manual
 // document.querySelector("#logradouro").value = cepDados.logradouro;
 // document.querySelector("#bairro").value = cepDados.bairro;
